@@ -4,18 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <h1>Snake Game</h1>
     <div class="container">
         <div class="game">
-            <button class="btn">restart</button>
+            <div class="btns">
+                <button class="toggleBtn">
+                    <i class="fa-solid fa-hands"></i>
+                    <i class="fa-solid fa-robot"></i>
+                </button>
+                <button class="btn">Restart</button>
+            <div class="controls">
+                <button class="c-btn" id="bfsBtn">BFS</button>
+                <button class="c-btn" id="dfsBtn">DFS</button>
+                <button class="c-btn" id="ucsBtn">Uniform</button>
+                <button class="c-btn" id="greedyBtn">Greedy</button>
+                <button class="c-btn" id="astarBtn">A*</button>
+            </div>
+            </div>
             <div class="grid"></div>
+
             <div class="play">
                 <h3>score</h3>
                 <div class="score">0</div>
             </div>
+
         </div>
         
     </div>

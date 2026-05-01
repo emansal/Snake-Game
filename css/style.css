@@ -28,7 +28,7 @@ text-shadow:
 }
 .container{
     width: 60%;
-    height:70% ;
+    height:75% ;
     background-color: #191b28;
     border-radius: 15px;
 box-shadow:
@@ -47,6 +47,39 @@ box-shadow:
     justify-content: center;
     align-items: center;
     gap: 3rem;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.controls{
+    display:flex;
+    flex-direction: column;
+    gap:50px; 
+}
+.c-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #191b28;   
+    background-color: white;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.c-btn:hover{
+    transform: translateY(-2px);
+    background-color: #f1f1f1;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+.c-btn:active{
+    transform: scale(0.97);
 }
 .btn{
     width: 100px;
@@ -70,6 +103,36 @@ box-shadow:
     transform: translateY(2px) scale(0.98);
     
 }
+.toggleBtn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #758be1;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.toggleBtn:hover{
+    transform: scale(1.05);
+}
+
+.toggleBtn i:last-child{
+   display: none;
+}
+i{
+   font-size: 22px; 
+}
+
+.toggleBtn.ai i:first-child{
+    display: none;
+}
+.toggleBtn.ai i:last-child{
+    display: block;
+}
+
 .grid{
     width: 400px;
     height: 400px;
